@@ -34,10 +34,11 @@ La règle de la programmation objet est d'encapsuler ensemble ce qui change ense
 
 You should group data and behavior that tend to vary for the same reason into a single module (class/object). 
 This reduces ripple effects when requirements change.
+
 Why it matters:
-Single reason to change: Each class should have one cause to change (Single Responsibility Principle). If x, y, and player always change together, treat them as one concept.
-Encapsulation: Hide related details behind a clear interface so callers don’t need to know or pass every piece separately.
-Cohesion up, coupling down: A cohesive object is easier to understand, test, and reuse; fewer parameters mean fewer dependencies.
+ - Single reason to change: Each class should have one cause to change (Single Responsibility Principle). If x, y, and player always change together, treat them as one concept.
+ - Encapsulation: Hide related details behind a clear interface so callers don’t need to know or pass every piece separately.
+ - Cohesion up, coupling down: A cohesive object is easier to understand, test, and reuse; fewer parameters mean fewer dependencies.
 
 ### How to apply:
 Identify the conceptual unit (e.g., a tile, money, date range, address).
