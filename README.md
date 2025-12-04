@@ -51,6 +51,24 @@ Snapshots:   0 total
 
 ![illustration code](https://osu-wams-blogs-uploads.s3.amazonaws.com/blogs.dir/6221/files/2023/01/image.png)
 
+# Exercice for Students
+
+ - Fork the project on your GitHub account
+   - WARNING: uncheck the option: Copy the main branch only 
+ - Clone the project on your local machine
+ - Create a branch for each exercise, prefix with your name or group name , like 'ICE-GRP1/Exo01' 
+ - open the file `src/12_RefactoringGolf/hole1/kata.ts`
+ -  fix indentation first -> to produce a change, on which you can comment
+ -  commit and push that change
+ -  make your comments, using
+   // then refactor
+   // submit your PR for review
+ - Write a review !!!!   IMPORTANT ! a score(grade) will be given for this step
+ - Commit and push your changes
+ - Create a Pull Request on each exercise
+
+
+
 ## on your Forked Project
 
 - put your names in README ETUDIANTS.md; commit and push.
