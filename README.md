@@ -36,15 +36,66 @@ yarn test
 yarn test:ci
 ```
 
-## Don't panic, you're still on branch 'main'
+## on branch 'ExoNN' , tests must be green
 
-that's why some tests are failing
+```
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+
+```
 
 # Fight the code smells
 - https://www.opsera.io/blog/what-is-code-smell
 - https://blog.codinghorror.com/code-smells/
 
 ![illustration code](https://osu-wams-blogs-uploads.s3.amazonaws.com/blogs.dir/6221/files/2023/01/image.png)
+
+# Exercise for Students
+
+- Fork the project on your GitHub account OR join the Github classroom
+  - if you fork: UNcheck the option `Copy the main branch only`
+- Clone the project on your local machine
+  - if you forked the project , copy each branch for each exercise, prefix with your name or group name , like 'ICE-GRP1/Exo01'  from /Exo01
+  - if you joined the Github classroom, just switch to the branch 'Exo01'
+- open the file `src/12_RefactoringGolf/exo1/kata.ts`
+-  fix indentation first -> to produce a change, on which you can comment/start a review
+- use Prettier to fix the indentation (see below)
+- commit and push that change
+- goto the github page of the project, and create a Pull Request on the branch 'Exo01'
+- click on 'Contribute' button, then click on 'Open a pull request'
+-  make your comments, using :
+  1. your brain -> spot only the problem described on this exercise
+  2. your AI ->  you must only answer the question of this exercise (EXO 01)
+- Write a review !!!!   IMPORTANT ! a score (grade) will be given for this step
+- Refactor the code to fix the problem(s), ONLY WHERE YOU PLACE A COMMENT/REVIEW !!!!!
+  - ***code modified by AI that does not respond to the review will be rejected***
+- Ensure the tests are still green
+- Commit and push your changes
+
+## Prettier
+
+To install Prettier, you can use npm or yarn. Here are the commands for both:
+
+Using npm:
+
+```sh
+npm install --save-dev prettier
+```
+Using yarn:
+
+```sh
+yarn add --dev prettier
+```
+
+After installation, you can format your code using Prettier by running:
+
+```sh
+npx prettier --write .
+```
+
+This will format all files in your project. You can also create a .prettierrc file to customize Prettier's configuration.
+
 
 ## on your Forked Project
 
@@ -139,9 +190,9 @@ yarn watch
 ## Explanations, References
 
 Cours SOLID de Isabelle Blasquez (IUT Limoges)
+
+todo::::
+
 https://github.com/iblasquez/enseignement-but2-developpement/blob/master/cours/SOLID.pdf
 
-
 https://blog.logrocket.com/using-prettier-eslint-automate-formatting-fixing-javascript/#differences-between-eslint-prettier
-
-https://code.visualstudio.com/docs/remote/wsl-tutorial
