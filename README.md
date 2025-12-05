@@ -56,7 +56,6 @@ Snapshots:   0 total
 - Fork the project on your GitHub account OR join the Github classroom
   - if you fork: UNcheck the option `Copy the main branch only`
 - Clone the project on your local machine
-  - if you forked the project , copy each branch for each exercise, prefix with your name or group name , like 'ICE-GRP1/Exo01'  from /Exo01
   - if you joined the Github classroom, just switch to the branch 'Exo01'
 - open the file `src/12_RefactoringGolf/exo1/kata.ts`
 -  fix indentation first -> to produce a change, on which you can comment/start a review
@@ -100,15 +99,15 @@ This will format all files in your project. You can also create a .prettierrc fi
 ## on your Forked Project
 
 - put your names in README ETUDIANTS.md; commit and push.
-- Create a Pull Request on Exo01
-  - Use a diff tool to see the differences in code between the starting hole and end hole
-  - write your annotations, remarks... spot the problem(s)
+- copy each branch for each exercise (new branch from), prefix with your name or group name , like 'ICE-GRP1/Exo01'  from /Exo01
+- Create a Pull Request on the new branch
+  - reformat the source code using Prettier (to create a first change on the file)
+  - write your annotations, remarks... spot the problem(s) that are described in the exercise
   - make a refactoring to the code, to fix the problem
   - be sure the tests are green
-  - review your changes
   - push (but don't merge) the pull request to the original repository
 
-- Move to Exo 2 and do the same to refactor the code from Exo 2 to be like the code in Exo 3
+- Move to Exo 2 and do a new refactoring
 - Apply the same pattern until you reach Exo 8
 - Remember to keep the code compiling and the tests passing at all times during the refactor
 - For every refactor, run the tests, and if they pass, commit
@@ -119,16 +118,9 @@ This will format all files in your project. You can also create a .prettierrc fi
 
 - Make sure the code builds, and tests are passing `yarn test`
 
-## First run
 
-- Refactor the code as best as you can.
-  - Create your own branch based on 'Exo001', for example: 'Exo001-review'
-    - Create a pull request
-    - annotate your ideas, remarks on code
-    - do the refactoring
-    - create a Pull Request
 
-## other runs
+## Guiding Principles
 
 - Refactor the code following the treatment available for each code smell in <https://refactoring.guru/refactoring/smells>.
 
