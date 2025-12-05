@@ -1,4 +1,4 @@
-# Exo 3 to Exo 4
+# Exo 3
 
 
 ## Refactorings
@@ -8,7 +8,6 @@
 
 ## Tips
 
-- Use a diff tool to identify the code changes you need to perform
 - Check the code coverage is enough to detect any unintended behaviour changes
 
 ### While refactoring
