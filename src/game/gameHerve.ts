@@ -41,7 +41,7 @@ export class GameHerve {
         result.winner = this.readMatrixLine(rowNumber)[0]  ;
         return result;
     }
-
+        //TODO: remove duplicate code (DRY)
     VerifyColumn(columnNumber: number) {
         let result = new GameResult();
         let winningSymbol = this.containsOnlyTheSameSymbol(this.readMatrixColumn(columnNumber));
@@ -61,7 +61,7 @@ export class GameHerve {
     readMatrixLine(rowNumber: number): string {
         return this._matrix[rowNumber].reduce((acc, curr) => acc + curr);
     }
-
+    //TODO: remove duplicate code (DRY)
     readMatrixColumn(colNumber: number): string {
         return this._matrix.reduce((acc, row) => acc + row[colNumber], '');
     }

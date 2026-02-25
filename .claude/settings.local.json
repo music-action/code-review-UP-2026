@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test -- --coverage)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
