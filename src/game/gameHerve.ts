@@ -35,33 +35,34 @@ export class GameHerve {
     }
 
     VerifyLine(rowNumber: number): GameResult {
-        let result = new GameResult();
-        let winningSymbol = this.containsOnlyTheSameSymbol(this.readMatrixLine(rowNumber));
-        result.isWinner = winningSymbol;
-        result.winner = this.readMatrixLine(rowNumber)[0]  ;
-        return result;
+        return this.VerifyTitles(this.readMatrixLine(rowNumber))
     }
-        //TODO: remove duplicate code (DRY)
+
     VerifyColumn(columnNumber: number) {
+        return this.VerifyTitles(this.readMatrixColumn(columnNumber));
+    }
+
+    VerifyTitles(listOfTiles : string) {
         let result = new GameResult();
-        let winningSymbol = this.containsOnlyTheSameSymbol(this.readMatrixColumn(columnNumber));
+        let winningSymbol = this.containsOnlyTheSameSymbol(listOfTiles);
         result.isWinner = winningSymbol;
-        result.winner = this.readMatrixColumn(columnNumber)[0]  ;
+        result.winner = listOfTiles[0]  ;
         return result;
     }
 
+
     containsOnlyTheSameSymbol(fullLine: string): boolean {
-        return fullLine.split('').reduce((acc, curr, idx) => {
+        const listOfChar = fullLine.split('');
+        return listOfChar.reduce((acc, curr, idx) => {
             if (idx === 0) return curr !== '_'; // First char must not be empty
             return acc && curr === fullLine[0]; // All must match first char
         }, true);
     }
 
-
     readMatrixLine(rowNumber: number): string {
         return this._matrix[rowNumber].reduce((acc, curr) => acc + curr);
     }
-    //TODO: remove duplicate code (DRY)
+
     readMatrixColumn(colNumber: number): string {
         return this._matrix.reduce((acc, row) => acc + row[colNumber], '');
     }
@@ -69,7 +70,4 @@ export class GameHerve {
     setTile(row: number, column: number, symbol: string) {
         this._matrix[row][column] = symbol;
     }
-
-
-
 }

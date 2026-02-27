@@ -1,3 +1,4 @@
+//@ts-nocheck
 // ❌ CODE SMELL: Complex predicates with nested AND/OR logic
 // This example is inspired by the Gilded Rose Kata https://github.com/emilybache/GildedRose-Refactoring-Kata
 // The logic is obscured by complex boolean conditions

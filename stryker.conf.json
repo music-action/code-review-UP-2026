@@ -14,11 +14,11 @@
     "enableFindRelatedTests": true,
     "projectType": "custom"
   },
-  "mutate": ["src/**/*kata.ts"],
+  "mutate": ["src/game/gameHerve.ts"],
   "mutator": {
     "plugins": null
   },
-  "reporters": ["progress", "dots", "dashboard", "html"],
+  "reporters": ["progress", "dots", "dashboard", "html", "json"],
   "testRunner": "jest",
   "tsconfigFile": "tsconfig.json"
 }

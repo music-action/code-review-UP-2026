@@ -1,3 +1,4 @@
+//@ts-nocheck
 // ✅ REFACTORED: Extract predicates into named functions
 // Each predicate function has a clear, self-documenting name
 // This example is inspired by the Tennis Kata and Gilded Rose Kata

@@ -8,7 +8,6 @@ describe('unknown game', () => {
     });
 
 
-
     test('line one is winning', () => {
         //arrange
         game.setDimensions(3, 3);
@@ -17,7 +16,6 @@ describe('unknown game', () => {
         game.fillFullLine( 1, 'X');
 
         //act
-
         const result = game.VerifyLine(1);
 
         expect( result.isWinner ).toBe(true);
@@ -33,7 +31,6 @@ describe('unknown game', () => {
         game.fillFullLine( 1, 'X');
 
         //act
-
         const result = game.VerifyLine(0);
 
         expect( result.isWinner ).toBe(false);
